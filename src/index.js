@@ -1,17 +1,42 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDom from 'react-dom';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function Jsx(){
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  return (
+      <section>
+        <div>
+          <h1> Jsx Rules</h1>
+          <ul>
+            <li>
+              <a href="">Return single element</a>
+            </li>
+            <br />
+            <li>
+              <a href="">div / element / article or Fragment</a>
+            </li>
+            <br />
+            <li>
+              <a href="">use camelCase for html attribute</a>
+            </li>
+            <br />
+            <li>
+              <a href="">className instead of class</a>
+            </li>
+            <br />
+            <li>
+              <a href="">close every element</a>
+            </li>
+            <br />
+            <li>
+              <a href="">formatting</a>
+            </li>
+          </ul>
+          <h3>Thankyou</h3>
+        </div>
+      </section>
+  );
+
+}
+
+ReactDom.render(<Jsx/>, document.getElementById('root'))
